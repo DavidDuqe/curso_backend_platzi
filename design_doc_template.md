@@ -8,16 +8,15 @@ Descripción..
 
 #### Casos de uso
 Descripción...
-* Caso de uso 1
-* Caso de uso 2
-* ...
+* Como editor me gustaria poder subir una review de una camara.
+* Como editor me gustaria poder subir una review de un lente para las camaras.
+* Como usuario no registrado me gustaria poder leer una review.
+
 
 #### Out of Scope (casos de uso No Soportados)
 Descripción...
-* Caso de uso 1
-* Caso de uso 2
-* ...
----
+* Como usuario no registrado me gustaria poder subir una review de una camara
+
 ## Arquitectura
 
 ### Diagramas
@@ -30,11 +29,12 @@ Poner diseño de entidades, Jsons, tablas, diagramas entidad relación, etc..
 ## Limitaciones
 Lista de limitaciones conocidas. Puede ser en formato de lista.
 Ej.
-* Llamadas del API tienen latencia X
-* No se soporta mas de X llamadas por segundo
+* Llamadas al API que permite subir una reviw, no excede los limites de latencia Xms
+* Llamadas al API que permite tener reviews para la lectura deben tener una latencia menor a 100ms
 ---
 ## Costo
 Descripción/Análisis de costos
+Contemplando 1000 usuarios diarios, que visitan recurrentemente cada hora:
 Ejemplo:
 "Considerando N usuarios diarios, M llamadas a X servicio/baseDatos/etc"
 * 1000 llamadas diarias a serverless functions. $XX.XX
